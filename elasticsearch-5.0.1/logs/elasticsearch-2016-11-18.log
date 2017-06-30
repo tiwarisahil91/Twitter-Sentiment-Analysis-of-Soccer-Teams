@@ -1,0 +1,135 @@
+[2016-11-18T12:21:49,036][INFO ][o.e.n.Node               ] [] initializing ...
+[2016-11-18T12:21:50,359][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] using [1] data paths, mounts [[New Volume (F:)]], net usable_space [50.1gb], net total_space [78gb], spins? [unknown], types [NTFS]
+[2016-11-18T12:21:50,369][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] heap size [1.9gb], compressed ordinary object pointers [true]
+[2016-11-18T12:21:50,374][INFO ][o.e.n.Node               ] [Ub78aux] node name [Ub78aux] derived from node ID; set [node.name] to override
+[2016-11-18T12:21:50,463][INFO ][o.e.n.Node               ] [Ub78aux] version[5.0.1], pid[1532], build[080bb47/2016-11-11T22:08:49.812Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_111/25.111-b14]
+[2016-11-18T12:22:01,193][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [aggs-matrix-stats]
+[2016-11-18T12:22:01,195][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [ingest-common]
+[2016-11-18T12:22:01,195][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-expression]
+[2016-11-18T12:22:01,196][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-groovy]
+[2016-11-18T12:22:01,196][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-mustache]
+[2016-11-18T12:22:01,197][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-painless]
+[2016-11-18T12:22:01,198][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [percolator]
+[2016-11-18T12:22:01,199][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [reindex]
+[2016-11-18T12:22:01,200][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty3]
+[2016-11-18T12:22:01,200][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty4]
+[2016-11-18T12:22:01,201][INFO ][o.e.p.PluginsService     ] [Ub78aux] no plugins loaded
+[2016-11-18T12:22:44,944][INFO ][o.e.n.Node               ] [Ub78aux] initialized
+[2016-11-18T12:22:44,955][INFO ][o.e.n.Node               ] [Ub78aux] starting ...
+[2016-11-18T12:22:53,022][INFO ][o.e.t.TransportService   ] [Ub78aux] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-11-18T12:22:57,665][INFO ][o.e.c.s.ClusterService   ] [Ub78aux] new_master {Ub78aux}{Ub78aux0TomCs_WzeSTHSg}{1-SwK_AWQQqNqhDdr5PLSA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2016-11-18T12:22:58,164][INFO ][o.e.g.GatewayService     ] [Ub78aux] recovered [0] indices into cluster_state
+[2016-11-18T12:23:01,383][INFO ][o.e.h.HttpServer         ] [Ub78aux] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-11-18T12:23:01,384][INFO ][o.e.n.Node               ] [Ub78aux] started
+[2016-11-18T12:23:07,449][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [nfl] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2016-11-18T12:42:35,357][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [ufl] creating index, cause [api], templates [], shards [5]/[1], mappings [2013]
+[2016-11-18T13:34:25,120][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][3935][5] duration [11.7s], collections [1]/[12.1s], total [11.7s]/[12.2s], memory [179.9mb]->[120.7mb]/[1.9gb], all_pools {[young] [122.8mb]->[16.3mb]/[133.1mb]}{[survivor] [10mb]->[9.6mb]/[16.6mb]}{[old] [47mb]->[95mb]/[1.8gb]}
+[2016-11-18T13:34:25,275][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][3935] overhead, spent [11.7s] collecting in the last [12.1s]
+[2016-11-18T13:34:33,401][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [nfl/3MtjBkqzT2WsZszbWZlpXQ] create_mapping [2013]
+[2016-11-18T13:34:40,633][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][3949][6] duration [1.9s], collections [1]/[2.1s], total [1.9s]/[14.2s], memory [237mb]->[173.5mb]/[1.9gb], all_pools {[young] [132.3mb]->[234.9kb]/[133.1mb]}{[survivor] [9.6mb]->[16.6mb]/[16.6mb]}{[old] [95mb]->[156.9mb]/[1.8gb]}
+[2016-11-18T13:34:40,725][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][3949] overhead, spent [1.9s] collecting in the last [2.1s]
+[2016-11-18T13:35:43,589][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4008][17] duration [1.2s], collections [1]/[2.5s], total [1.2s]/[16.4s], memory [296.4mb]->[276.5mb]/[1.9gb], all_pools {[young] [75.8mb]->[16mb]/[133.1mb]}{[survivor] [9.6mb]->[16.6mb]/[16.6mb]}{[old] [210.8mb]->[243.9mb]/[1.8gb]}
+[2016-11-18T13:35:44,697][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4008] overhead, spent [1.2s] collecting in the last [2.5s]
+[2016-11-18T13:35:52,862][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4011][18] duration [3.3s], collections [1]/[4.4s], total [3.3s]/[19.8s], memory [376.1mb]->[356.7mb]/[1.9gb], all_pools {[young] [115.5mb]->[17.8mb]/[133.1mb]}{[survivor] [16.6mb]->[16.6mb]/[16.6mb]}{[old] [243.9mb]->[322.3mb]/[1.8gb]}
+[2016-11-18T13:35:52,863][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4011] overhead, spent [3.3s] collecting in the last [4.4s]
+[2016-11-18T13:35:56,722][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4012][19] duration [1.5s], collections [1]/[3.8s], total [1.5s]/[21.3s], memory [356.7mb]->[612.5mb]/[1.9gb], all_pools {[young] [17.8mb]->[130mb]/[133.1mb]}{[survivor] [16.6mb]->[15.5mb]/[16.6mb]}{[old] [322.3mb]->[466.9mb]/[1.8gb]}
+[2016-11-18T13:35:56,847][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4012] overhead, spent [1.5s] collecting in the last [3.8s]
+[2016-11-18T13:36:23,874][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4014][23] duration [3s], collections [4]/[13.8s], total [3s]/[24.3s], memory [614.4mb]->[638.1mb]/[1.9gb], all_pools {[young] [131.9mb]->[70.8mb]/[133.1mb]}{[survivor] [15.5mb]->[12.8mb]/[16.6mb]}{[old] [466.9mb]->[554.5mb]/[1.8gb]}
+[2016-11-18T13:37:43,337][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4086][25] duration [870ms], collections [1]/[2.8s], total [870ms]/[25.2s], memory [642.1mb]->[580.7mb]/[1.9gb], all_pools {[young] [65.4mb]->[2.1kb]/[133.1mb]}{[survivor] [16.6mb]->[16.6mb]/[16.6mb]}{[old] [560mb]->[564.1mb]/[1.8gb]}
+[2016-11-18T13:37:43,342][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4086] overhead, spent [870ms] collecting in the last [2.8s]
+[2016-11-18T13:38:42,468][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4143] overhead, spent [551ms] collecting in the last [1s]
+[2016-11-18T13:46:03,252][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4580] overhead, spent [474ms] collecting in the last [1s]
+[2016-11-18T13:46:07,644][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4583][41] duration [1.3s], collections [1]/[2.3s], total [1.3s]/[28.7s], memory [805.8mb]->[710.7mb]/[1.9gb], all_pools {[young] [126.8mb]->[37.6kb]/[133.1mb]}{[survivor] [11.4mb]->[16.6mb]/[16.6mb]}{[old] [667.5mb]->[694mb]/[1.8gb]}
+[2016-11-18T13:46:07,660][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4583] overhead, spent [1.3s] collecting in the last [2.3s]
+[2016-11-18T13:46:09,714][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4585] overhead, spent [491ms] collecting in the last [1s]
+[2016-11-18T13:46:13,219][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4587][44] duration [1.5s], collections [1]/[2.4s], total [1.5s]/[30.8s], memory [778.7mb]->[724.4mb]/[1.9gb], all_pools {[young] [60.3mb]->[2kb]/[133.1mb]}{[survivor] [8.9mb]->[11.3mb]/[16.6mb]}{[old] [709.3mb]->[713mb]/[1.8gb]}
+[2016-11-18T13:46:13,690][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4587] overhead, spent [1.5s] collecting in the last [2.4s]
+[2016-11-18T13:46:28,814][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4591][45] duration [5.6s], collections [1]/[8.3s], total [5.6s]/[36.4s], memory [762.5mb]->[815.5mb]/[1.9gb], all_pools {[young] [38.1mb]->[34.4mb]/[133.1mb]}{[survivor] [11.3mb]->[16.6mb]/[16.6mb]}{[old] [713mb]->[764.4mb]/[1.8gb]}
+[2016-11-18T13:46:39,553][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4591] overhead, spent [5.6s] collecting in the last [8.3s]
+[2016-11-18T13:47:35,918][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4592][50] duration [17.2s], collections [5]/[48.2s], total [17.2s]/[53.6s], memory [815.5mb]->[1003.3mb]/[1.9gb], all_pools {[young] [34.4mb]->[70.1mb]/[133.1mb]}{[survivor] [16.6mb]->[9.1mb]/[16.6mb]}{[old] [764.4mb]->[924.2mb]/[1.8gb]}
+[2016-11-18T13:47:52,281][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4592] overhead, spent [17.2s] collecting in the last [48.2s]
+[2016-11-18T13:48:57,871][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4637][51] duration [3.9s], collections [1]/[5.3s], total [3.9s]/[57.6s], memory [1gb]->[1004.5mb]/[1.9gb], all_pools {[young] [121.3mb]->[16.9mb]/[133.1mb]}{[survivor] [9.1mb]->[11.7mb]/[16.6mb]}{[old] [924.2mb]->[975.8mb]/[1.8gb]}
+[2016-11-18T13:48:57,873][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4637] overhead, spent [3.9s] collecting in the last [5.3s]
+[2016-11-18T13:49:07,359][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4640][52] duration [2.8s], collections [1]/[3.9s], total [2.8s]/[1m], memory [1gb]->[1.1gb]/[1.9gb], all_pools {[young] [131mb]->[15.8mb]/[133.1mb]}{[survivor] [11.7mb]->[15.7mb]/[16.6mb]}{[old] [975.8mb]->[1gb]/[1.8gb]}
+[2016-11-18T13:49:07,420][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4640] overhead, spent [2.8s] collecting in the last [3.9s]
+[2016-11-18T13:49:22,961][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4648][53] duration [4s], collections [1]/[4.7s], total [4s]/[1m], memory [1.1gb]->[1.1gb]/[1.9gb], all_pools {[young] [96.8mb]->[715.9kb]/[133.1mb]}{[survivor] [15.7mb]->[16.6mb]/[16.6mb]}{[old] [1gb]->[1.1gb]/[1.8gb]}
+[2016-11-18T13:49:22,966][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4648] overhead, spent [4s] collecting in the last [4.7s]
+[2016-11-18T13:49:37,153][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4661] overhead, spent [481ms] collecting in the last [1s]
+[2016-11-18T13:49:47,902][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4670][59] duration [927ms], collections [1]/[1.1s], total [927ms]/[1.1m], memory [1.2gb]->[1.1gb]/[1.9gb], all_pools {[young] [126.4mb]->[2.5kb]/[133.1mb]}{[survivor] [13.6mb]->[16.6mb]/[16.6mb]}{[old] [1.1gb]->[1.1gb]/[1.8gb]}
+[2016-11-18T13:49:47,911][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4670] overhead, spent [927ms] collecting in the last [1.1s]
+[2016-11-18T13:50:00,476][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4682] overhead, spent [512ms] collecting in the last [1s]
+[2016-11-18T13:50:15,515][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4695] overhead, spent [506ms] collecting in the last [1.2s]
+[2016-11-18T13:50:24,541][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4698][68] duration [6.3s], collections [1]/[6.9s], total [6.3s]/[1.2m], memory [1.2gb]->[1.2gb]/[1.9gb], all_pools {[young] [79.4mb]->[1mb]/[133.1mb]}{[survivor] [12mb]->[16.6mb]/[16.6mb]}{[old] [1.1gb]->[1.1gb]/[1.8gb]}
+[2016-11-18T13:50:25,540][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4698] overhead, spent [6.3s] collecting in the last [6.9s]
+[2016-11-18T13:50:39,389][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4709] overhead, spent [429ms] collecting in the last [1s]
+[2016-11-18T13:50:46,242][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4710][72] duration [1.9s], collections [2]/[6.8s], total [1.9s]/[1.2m], memory [1.2gb]->[1.3gb]/[1.9gb], all_pools {[young] [3.9mb]->[104.9mb]/[133.1mb]}{[survivor] [15.7mb]->[16.6mb]/[16.6mb]}{[old] [1.1gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:50:47,306][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4710] overhead, spent [1.9s] collecting in the last [6.8s]
+[2016-11-18T13:51:01,542][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4722] overhead, spent [479ms] collecting in the last [1.6s]
+[2016-11-18T13:51:45,507][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4761][78] duration [1.9s], collections [1]/[2.9s], total [1.9s]/[1.3m], memory [1.3gb]->[1.2gb]/[1.9gb], all_pools {[young] [75.2mb]->[2kb]/[133.1mb]}{[survivor] [12.1mb]->[16.6mb]/[16.6mb]}{[old] [1.2gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:51:45,509][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4761] overhead, spent [1.9s] collecting in the last [2.9s]
+[2016-11-18T13:52:08,016][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4777][81] duration [1.9s], collections [1]/[4.2s], total [1.9s]/[1.3m], memory [1.3gb]->[1.2gb]/[1.9gb], all_pools {[young] [108.3mb]->[1.2mb]/[133.1mb]}{[survivor] [15.9mb]->[11.6mb]/[16.6mb]}{[old] [1.2gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:52:08,031][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4777] overhead, spent [1.9s] collecting in the last [4.2s]
+[2016-11-18T13:52:11,694][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4779][82] duration [1.2s], collections [1]/[2.6s], total [1.2s]/[1.4m], memory [1.3gb]->[1.2gb]/[1.9gb], all_pools {[young] [49mb]->[1.1mb]/[133.1mb]}{[survivor] [11.6mb]->[11.8mb]/[16.6mb]}{[old] [1.2gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:52:11,727][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4779] overhead, spent [1.2s] collecting in the last [2.6s]
+[2016-11-18T13:52:40,806][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4803][88] duration [1s], collections [1]/[1.8s], total [1s]/[1.4m], memory [1.3gb]->[1.2gb]/[1.9gb], all_pools {[young] [76.7mb]->[2mb]/[133.1mb]}{[survivor] [14.3mb]->[13.5mb]/[16.6mb]}{[old] [1.2gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:52:40,843][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4803] overhead, spent [1s] collecting in the last [1.8s]
+[2016-11-18T13:52:49,049][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4809][89] duration [1.4s], collections [1]/[3.1s], total [1.4s]/[1.4m], memory [1.3gb]->[1.2gb]/[1.9gb], all_pools {[young] [64mb]->[2.6mb]/[133.1mb]}{[survivor] [13.5mb]->[16.6mb]/[16.6mb]}{[old] [1.2gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:52:49,567][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4809] overhead, spent [1.4s] collecting in the last [3.1s]
+[2016-11-18T13:52:54,146][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][4810][90] duration [1.9s], collections [1]/[5s], total [1.9s]/[1.4m], memory [1.2gb]->[1.3gb]/[1.9gb], all_pools {[young] [2.6mb]->[29.5mb]/[133.1mb]}{[survivor] [16.6mb]->[16.6mb]/[16.6mb]}{[old] [1.2gb]->[1.2gb]/[1.8gb]}
+[2016-11-18T13:52:54,163][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4810] overhead, spent [1.9s] collecting in the last [5s]
+[2016-11-18T13:53:32,398][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4846] overhead, spent [408ms] collecting in the last [1.4s]
+[2016-11-18T15:12:29,056][INFO ][o.e.n.Node               ] [] initializing ...
+[2016-11-18T15:12:29,902][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] using [1] data paths, mounts [[New Volume (F:)]], net usable_space [50gb], net total_space [78gb], spins? [unknown], types [NTFS]
+[2016-11-18T15:12:29,940][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] heap size [1.9gb], compressed ordinary object pointers [true]
+[2016-11-18T15:12:30,357][INFO ][o.e.n.Node               ] [Ub78aux] node name [Ub78aux] derived from node ID; set [node.name] to override
+[2016-11-18T15:12:30,429][INFO ][o.e.n.Node               ] [Ub78aux] version[5.0.1], pid[4228], build[080bb47/2016-11-11T22:08:49.812Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_111/25.111-b14]
+[2016-11-18T15:12:37,814][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [aggs-matrix-stats]
+[2016-11-18T15:12:37,824][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [ingest-common]
+[2016-11-18T15:12:37,824][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-expression]
+[2016-11-18T15:12:37,827][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-groovy]
+[2016-11-18T15:12:37,829][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-mustache]
+[2016-11-18T15:12:37,829][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-painless]
+[2016-11-18T15:12:37,830][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [percolator]
+[2016-11-18T15:12:37,831][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [reindex]
+[2016-11-18T15:12:37,832][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty3]
+[2016-11-18T15:12:37,874][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty4]
+[2016-11-18T15:12:37,876][INFO ][o.e.p.PluginsService     ] [Ub78aux] no plugins loaded
+[2016-11-18T15:13:02,634][INFO ][o.e.n.Node               ] [Ub78aux] initialized
+[2016-11-18T15:13:02,637][INFO ][o.e.n.Node               ] [Ub78aux] starting ...
+[2016-11-18T15:13:09,456][INFO ][o.e.t.TransportService   ] [Ub78aux] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-11-18T15:13:13,836][INFO ][o.e.c.s.ClusterService   ] [Ub78aux] new_master {Ub78aux}{Ub78aux0TomCs_WzeSTHSg}{GMlL_EuGTk-gCjy33sKvWw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2016-11-18T15:13:16,195][INFO ][o.e.g.GatewayService     ] [Ub78aux] recovered [2] indices into cluster_state
+[2016-11-18T15:13:19,115][INFO ][o.e.h.HttpServer         ] [Ub78aux] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-11-18T15:13:19,117][INFO ][o.e.n.Node               ] [Ub78aux] started
+[2016-11-18T15:13:38,348][INFO ][o.e.c.r.a.AllocationService] [Ub78aux] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[nfl][3]] ...]).
+[2016-11-18T15:32:26,374][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [realmadrid] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2016-11-18T15:32:31,255][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [realmadrid/RBI20JzNTPqdI2UPls5cig] create_mapping [tweet]
+[2016-11-18T15:32:31,300][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [realmadrid/RBI20JzNTPqdI2UPls5cig] update_mapping [tweet]
+[2016-11-18T15:32:32,738][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][1165] overhead, spent [440ms] collecting in the last [1.1s]
+[2016-11-18T15:32:33,089][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [realmadrid/RBI20JzNTPqdI2UPls5cig] update_mapping [tweet]
+[2016-11-18T15:32:34,886][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [liverpool] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2016-11-18T15:32:38,539][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [manutd] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2016-11-18T15:32:44,870][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [liverpool/PKCWWkkKQm2ZcGt3-cVhww] create_mapping [tweet]
+[2016-11-18T15:32:44,975][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [liverpool/PKCWWkkKQm2ZcGt3-cVhww] update_mapping [tweet]
+[2016-11-18T15:32:45,549][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [manutd/W2UTJA9JShCoIAZS3RG5AQ] create_mapping [tweet]
+[2016-11-18T15:32:45,955][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [manutd/W2UTJA9JShCoIAZS3RG5AQ] update_mapping [tweet]
+[2016-11-18T15:32:46,204][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [manutd/W2UTJA9JShCoIAZS3RG5AQ] update_mapping [tweet]
+[2016-11-18T15:32:51,079][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [chelsea] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2016-11-18T15:32:53,607][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [chelsea/Ztez1lRFRSiAQoQMI_7_Fw] create_mapping [tweet]
+[2016-11-18T15:32:54,783][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [chelsea/Ztez1lRFRSiAQoQMI_7_Fw] update_mapping [tweet]
+[2016-11-18T15:33:05,592][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [realmadrid/RBI20JzNTPqdI2UPls5cig] update_mapping [tweet]
+[2016-11-18T16:09:09,872][INFO ][o.e.c.m.MetaDataCreateIndexService] [Ub78aux] [arsenal] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2016-11-18T16:09:11,156][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [arsenal/ufOn9JirRiW2WH9RulOmwg] create_mapping [tweet]
+[2016-11-18T16:09:11,217][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [arsenal/ufOn9JirRiW2WH9RulOmwg] update_mapping [tweet]
+[2016-11-18T16:09:11,403][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [arsenal/ufOn9JirRiW2WH9RulOmwg] update_mapping [tweet]
+[2016-11-18T16:09:13,114][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [liverpool/PKCWWkkKQm2ZcGt3-cVhww] update_mapping [tweet]
+[2016-11-18T16:09:17,545][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [arsenal/ufOn9JirRiW2WH9RulOmwg] update_mapping [tweet]
+[2016-11-18T16:09:24,211][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][3366][9] duration [1.7s], collections [1]/[1.9s], total [1.7s]/[3s], memory [233.4mb]->[116.1mb]/[1.9gb], all_pools {[young] [130mb]->[1.3mb]/[133.1mb]}{[survivor] [5.3mb]->[16.6mb]/[16.6mb]}{[old] [98mb]->[98.2mb]/[1.8gb]}
+[2016-11-18T16:09:24,217][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][3366] overhead, spent [1.7s] collecting in the last [1.9s]
+[2016-11-18T16:09:35,488][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][3377] overhead, spent [284ms] collecting in the last [1s]
+[2016-11-18T16:12:14,196][INFO ][o.e.c.m.MetaDataMappingService] [Ub78aux] [chelsea/Ztez1lRFRSiAQoQMI_7_Fw] update_mapping [tweet]
+[2016-11-18T16:29:37,175][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][4571] overhead, spent [275ms] collecting in the last [1s]
+[2016-11-18T16:36:53,067][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][5003] overhead, spent [340ms] collecting in the last [1.3s]
+[2016-11-18T16:37:12,306][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][5021] overhead, spent [456ms] collecting in the last [1s]
+[2016-11-18T17:14:51,670][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2016-11-18T17:14:53,045][INFO ][o.e.n.Node               ] [Ub78aux] stopping ...

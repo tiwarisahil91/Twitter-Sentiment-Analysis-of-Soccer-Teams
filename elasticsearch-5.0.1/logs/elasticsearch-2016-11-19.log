@@ -1,0 +1,58 @@
+[2016-11-19T12:16:02,472][INFO ][o.e.n.Node               ] [] initializing ...
+[2016-11-19T12:16:03,850][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] using [1] data paths, mounts [[New Volume (F:)]], net usable_space [50.1gb], net total_space [78gb], spins? [unknown], types [NTFS]
+[2016-11-19T12:16:03,852][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] heap size [1.9gb], compressed ordinary object pointers [true]
+[2016-11-19T12:16:05,362][INFO ][o.e.n.Node               ] [Ub78aux] node name [Ub78aux] derived from node ID; set [node.name] to override
+[2016-11-19T12:16:05,433][INFO ][o.e.n.Node               ] [Ub78aux] version[5.0.1], pid[5024], build[080bb47/2016-11-11T22:08:49.812Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_111/25.111-b14]
+[2016-11-19T12:16:21,217][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [aggs-matrix-stats]
+[2016-11-19T12:16:21,218][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [ingest-common]
+[2016-11-19T12:16:21,219][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-expression]
+[2016-11-19T12:16:21,219][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-groovy]
+[2016-11-19T12:16:21,219][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-mustache]
+[2016-11-19T12:16:21,220][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-painless]
+[2016-11-19T12:16:21,221][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [percolator]
+[2016-11-19T12:16:21,222][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [reindex]
+[2016-11-19T12:16:21,222][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty3]
+[2016-11-19T12:16:21,223][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty4]
+[2016-11-19T12:16:21,226][INFO ][o.e.p.PluginsService     ] [Ub78aux] no plugins loaded
+[2016-11-19T12:16:52,779][INFO ][o.e.n.Node               ] [Ub78aux] initialized
+[2016-11-19T12:16:52,781][INFO ][o.e.n.Node               ] [Ub78aux] starting ...
+[2016-11-19T12:17:00,717][INFO ][o.e.t.TransportService   ] [Ub78aux] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-11-19T12:17:05,098][INFO ][o.e.c.s.ClusterService   ] [Ub78aux] new_master {Ub78aux}{Ub78aux0TomCs_WzeSTHSg}{xZKak1irTqiohUQvXAC0kw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2016-11-19T12:17:07,545][INFO ][o.e.g.GatewayService     ] [Ub78aux] recovered [6] indices into cluster_state
+[2016-11-19T12:17:11,263][INFO ][o.e.h.HttpServer         ] [Ub78aux] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-11-19T12:17:11,264][INFO ][o.e.n.Node               ] [Ub78aux] started
+[2016-11-19T12:17:33,268][INFO ][o.e.c.r.a.AllocationService] [Ub78aux] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[nfl][3]] ...]).
+[2016-11-19T12:32:45,971][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][950] overhead, spent [345ms] collecting in the last [1s]
+[2016-11-19T13:02:43,638][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][2738][7] duration [2.9s], collections [1]/[3s], total [2.9s]/[3.7s], memory [242.2mb]->[104mb]/[1.9gb], all_pools {[young] [133.1mb]->[708.1kb]/[133.1mb]}{[survivor] [10.3mb]->[4.5mb]/[16.6mb]}{[old] [98.7mb]->[98.7mb]/[1.8gb]}
+[2016-11-19T13:02:43,716][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][2738] overhead, spent [2.9s] collecting in the last [3s]
+[2016-11-19T13:17:26,142][INFO ][o.e.n.Node               ] [] initializing ...
+[2016-11-19T13:17:27,109][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] using [1] data paths, mounts [[New Volume (F:)]], net usable_space [50.1gb], net total_space [78gb], spins? [unknown], types [NTFS]
+[2016-11-19T13:17:27,112][INFO ][o.e.e.NodeEnvironment    ] [Ub78aux] heap size [1.9gb], compressed ordinary object pointers [true]
+[2016-11-19T13:17:28,450][INFO ][o.e.n.Node               ] [Ub78aux] node name [Ub78aux] derived from node ID; set [node.name] to override
+[2016-11-19T13:17:28,536][INFO ][o.e.n.Node               ] [Ub78aux] version[5.0.1], pid[7944], build[080bb47/2016-11-11T22:08:49.812Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_111/25.111-b14]
+[2016-11-19T13:17:37,454][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [aggs-matrix-stats]
+[2016-11-19T13:17:37,455][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [ingest-common]
+[2016-11-19T13:17:37,456][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-expression]
+[2016-11-19T13:17:37,456][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-groovy]
+[2016-11-19T13:17:37,457][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-mustache]
+[2016-11-19T13:17:37,457][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [lang-painless]
+[2016-11-19T13:17:37,457][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [percolator]
+[2016-11-19T13:17:37,458][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [reindex]
+[2016-11-19T13:17:37,458][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty3]
+[2016-11-19T13:17:37,459][INFO ][o.e.p.PluginsService     ] [Ub78aux] loaded module [transport-netty4]
+[2016-11-19T13:17:37,461][INFO ][o.e.p.PluginsService     ] [Ub78aux] no plugins loaded
+[2016-11-19T13:17:55,399][INFO ][o.e.n.Node               ] [Ub78aux] initialized
+[2016-11-19T13:17:55,401][INFO ][o.e.n.Node               ] [Ub78aux] starting ...
+[2016-11-19T13:18:01,422][INFO ][o.e.t.TransportService   ] [Ub78aux] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-11-19T13:18:05,776][INFO ][o.e.c.s.ClusterService   ] [Ub78aux] new_master {Ub78aux}{Ub78aux0TomCs_WzeSTHSg}{BA7E7ZMpRDaf8tFLOrEcCw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2016-11-19T13:18:08,181][INFO ][o.e.g.GatewayService     ] [Ub78aux] recovered [6] indices into cluster_state
+[2016-11-19T13:18:12,005][INFO ][o.e.h.HttpServer         ] [Ub78aux] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-11-19T13:18:12,006][INFO ][o.e.n.Node               ] [Ub78aux] started
+[2016-11-19T13:18:52,273][INFO ][o.e.c.r.a.AllocationService] [Ub78aux] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[nfl][3]] ...]).
+[2016-11-19T15:04:19,091][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][6360] overhead, spent [634ms] collecting in the last [1s]
+[2016-11-19T15:34:09,329][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][8144][10] duration [747ms], collections [1]/[1.5s], total [747ms]/[2.1s], memory [228.2mb]->[96.2mb]/[1.9gb], all_pools {[young] [131.8mb]->[117.4kb]/[133.1mb]}{[survivor] [5.2mb]->[4.9mb]/[16.6mb]}{[old] [91.1mb]->[91.1mb]/[1.8gb]}
+[2016-11-19T15:34:09,423][INFO ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][8144] overhead, spent [747ms] collecting in the last [1.5s]
+[2016-11-19T16:04:07,045][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][9933][11] duration [1.9s], collections [1]/[2.9s], total [1.9s]/[4.1s], memory [228mb]->[97.2mb]/[1.9gb], all_pools {[young] [131.9mb]->[792.6kb]/[133.1mb]}{[survivor] [4.9mb]->[5.4mb]/[16.6mb]}{[old] [91.1mb]->[91.1mb]/[1.8gb]}
+[2016-11-19T16:04:07,102][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][9933] overhead, spent [1.9s] collecting in the last [2.9s]
+[2016-11-19T16:34:13,102][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][young][11735][12] duration [1.3s], collections [1]/[1.4s], total [1.3s]/[5.4s], memory [229.7mb]->[97mb]/[1.9gb], all_pools {[young] [133.1mb]->[109.4kb]/[133.1mb]}{[survivor] [5.4mb]->[3.6mb]/[16.6mb]}{[old] [91.1mb]->[93.3mb]/[1.8gb]}
+[2016-11-19T16:34:13,124][WARN ][o.e.m.j.JvmGcMonitorService] [Ub78aux] [gc][11735] overhead, spent [1.3s] collecting in the last [1.4s]

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Manchester United</title>
+  <meta charset="utf-8">
+  <script src="scripts/require.js"></script>
+  <script>require(["scripts/team_specific_charts/manu/tweets_chart"], function () {})</script>
+  <style>
+	div#abc{ white-space: nowrap; }
+	div#abcd{ white-space: nowrap; }
+    h2
+	{
+	  font-size:10px;
+	}
+    #navBarSearchForm input[type=text]{width:430px;margin-left:30px;}
+	.take-all-space-you-can
+	{
+	  width:100%; 
+	}
+	#charts_and_tweets_panel{height:600px;width:100%;}
+	.tab-content
+	{
+	  border-width: 0 1px 1px;
+	  padding-top:10px;
+	}
+	.take-all-space-you-can
+	{
+      width:100%;
+    }
+	.panel
+	{
+	  margin-top:20px;
+	  margin-left:20px;
+	  margin-right:30px;
+	}
+	body 
+	{
+      font: 14px sans-serif;
+	}
+	.arc path 
+	{
+      stroke: none; 
+	}
+	svg
+	{
+	  display:block;
+	  margin:auto;
+	} 
+    .axis {
+	  font: 10px sans-serif;
+	}
+    .modal-dialog{
+	  width:800px;    !important
+	}  
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}	
+  </style> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="refresh()">
+<div style="background:url('../navbar.jpg') no-repeat;background-size:2200px 100px; opacity:0.9">
+  <div class="row" style="height:100px">
+  <div class="col-lg-12 pull-center"> 
+   <h2 style="text-align:center"><font style="background-color:white; opacity:0.8;"> <b>Sentimental Analysis of Soccer teams</b></h2>
+   <!--form class="navbar-form navbar-center" role="search" id="navBarSearchForm">
+    <div class="input-group">
+	 <input type="text" id="search_tweets" name="searchtweets" class="form-control" placeholder="Search your tweets">
+	 <span class="input-group-btn">
+	    <button class="btn btn-default" type="Submit"  id="#searchtweet"><span class="glyphicon glyphicon-search"></span></button>
+	 </span> 
+	</div>  
+   </form-->
+  </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    var data="{";
+    var query="\"size\":0"+","+
+      "\"aggs\" : {"+
+        "\"sentiments\" : {"+
+        "\"terms\" : {"+
+		"\"field\" :"+ "\"sentiment\","+
+        "\"order\" :{"+ "\"_term\":"+"\"asc\"}"+		
+        "}}"+    
+        "}}"	;
+	data=data+query;
+    $.ajax({
+			  method: "POST",
+			  url: "http://localhost:9200/manutd/_search",
+			  crossDomain: true,
+			  data: data,
+			  success: function(response) {
+			   var total=response.hits.total;
+               var negative_sentiment=+response.aggregations.sentiments.buckets[0].doc_count;
+			   console.log(negative_sentiment);
+               var positive_sentiment=+response.aggregations.sentiments.buckets[1].doc_count;	
+			   console.log(positive_sentiment);
+			   document.getElementById("positive").innerHTML= " " + "<b>" +((positive_sentiment/total)*100).toFixed(2)+"%"+"<b>";
+			   document.getElementById("negative").innerHTML= " " + "<b>" + ((negative_sentiment/total)*100).toFixed(2)+"%"+"<b>";
+			   
+			}   
+    })
+ }); 
+</script>
+
+<div class="container-fluid">
+  <div class="panel panel-default"id="charts_and_tweets_panel">
+    <div class="row">
+	  <div class="col-lg-9 col-md-9 col-sm-9">
+	    <ul class="nav nav-pills nav-stacked col-lg-2 col-md-2 col-sm-2">
+		  <li><a class="atab" data-toggle="pill" href="#About">% of Positive and Negative Sentiments</a></li>
+          <li><a class="tweets_tab" data-toggle="pill" href="#bar-chart">Top tweeting locations for Manchester United</a></li> 		 		  
+          <li class="active"><a class="take-all-space-you-can" data-toggle="pill" href="#About5">Sentiments per minute variation for Manchester United</a></li>
+        </ul>		  
+      <!--div class="col-lg-7 col-md-7 col-sm-7" id="page_container"-->
+        <div class="tab-content col-lg-7 col-md-7 col-sm-7">
+		  <div id="About" class="tab-pane fade">	
+					<!--font size="7px" style="vertical-align:middle;">&#x1F60A;</font-->
+			<!--img src="/Sentiments/happy.png" style="width:100px;height:100px;"><p id="positive" style="display:inline"></p>
+			<img src="/Sentiments/sad.png" style="width:100px;height:100px;"><p id="negative" style="display:inline"></p-->
+		  	<table align="center" cellpadding="0" cellspacing="0" border="0" height="550" width="850">
+				<tr>
+					<td  width="300" height="150" align="center">
+						<img src="/Sentiments/happy.png" style="width:100px;height:100px;"><p id="positive" style="display:inline"></p>
+					</td>
+					<td  width="300" height="150" align="center">
+						<img src="/Sentiments/sad.png" style="width:100px;height:100px;"><p id="negative" style="display:inline"></p>						
+					</td>					
+					
+				</tr>
+				<tr>
+					<td colspan="2" height="400" width="600" align="center">
+						<img src="/soccer_teams/manutd_large.png"  style="height:400px; opacity:0.3;">						
+					</td>
+				</tr>
+				</table>
+		  </div>
+		  <div id="tweet-pie-chart" class="tab-pane fade">
+		    <h2 align="center">Teams and their tweets</h2>
+           <!--script>
+		     $(".count_tab").click(function(){
+			   $.getScript(require(["scripts/main"]),  function () {});
+			 })  
+		   </script-->
+		  </div>
+		  <div id="bar-chart" class="tab-pane fade" align="center">
+		    <h4 align="center">Total tweets v/s the locations chart </h4>
+           <!--script>
+		     $(".tweets_tab").click(function(){
+			   $.getScript(require(["scripts/tweets_chart"]),  function () {});
+			 })  
+		   </script-->
+		  </div>
+		  <div id="line-chart" class="tab-pane fade">
+		    <p>This is chart 3 page</p>
+			<!--script>
+		     $(".tweets_overtime_tab").click(function(){
+			   $.getScript(require(["scripts/tweets_overtime"]),  function () {});
+			 })  
+		   </script-->
+		  </div>
+		  <div id="groupedbar-chart" class="tab-pane fade">
+		    <h5 align="center">Total tweets till date including sentiments(0 and 1 stand for -ve & +ve sentiments) v/s teams</p>
+		  </div>
+		  <div id="About5" class="tab-pane fadein active">
+		    <p>Timely minute wise variation of sentiments for Manchester United</p>
+			<div>
+			<iframe src="http://127.0.0.1:5601/app/kibana#/dashboard/manutd_avg_sent?embed=true&_g=()&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:manutd,panelIndex:1,row:1,size_x:11,size_y:5,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:manutd_avg_sent,uiState:())" height="600" width="800"></iframe>
+			</div>
+		  </div>
+		  <div id="About6" class="tab-pane fade">
+		    <p>This is chart 6 page</p>
+		  </div>
+        </div>		  
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3">
+	  <div class="panel panel-default" style="background-color:#c3dfef;">
+	  <h4 align="center">Latest tweets section</h5><hr/>
+		<div id="latest_tweets" style="margin-left:10px;margin-right:10px"></div>
+	  </div>
+     </div>	  
+    </div>
+  </div>  
+</div>  
+<!--h1 align="center"> Sentimental Analysis of Soccer teams</h1-->
+<script type="text/javascript">
+	  //$(document).ready(function(){
+	    function refresh()
+		{
+		   setInterval(function(){
+	       var data="{";
+		   
+		   var query="\"_source\" : ["+
+		               "\"text\"],";
+					   
+			var sort="\"sort\":{"+"\"@timestamp\": {"+"\"order\":"+"\"desc\"}}"+
+			          "}"
+			data=data+query+sort;
+            $.ajax({
+			  method: "POST",
+			  url: "http://localhost:9200/manutd/_search",
+			  crossDomain: true,
+			  data: data,
+			  success: function(xhr) {
+			  		var hits = xhr.hits.total;
+			  		var i = 0;
+			  		var str = "";
+			  		for(i=0;i<5;i++) {
+						//console.log(xhr);
+			  			str = str +xhr.hits.hits[i]._source.text+ "<hr/>";
+			  		}
+			  		$("#latest_tweets").html(str).css("font-size","12px");
+			  }
+			})
+		  },3000);	
+	    }
+</script>	
+	
+</body>
+</html>
+
